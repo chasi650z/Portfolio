@@ -4,9 +4,9 @@ import "./Navbar.css"
 const Navbar = () => {
     return (
         <>
-            <nav className="nav-wraooer">
+            <nav className="nav-wreaper">
                 <div className="nav-content">
-                    <img/>
+                    <img className="logo" src="./assets/logo.png"/>
                     <ul>
                         <li>
                             <a className="menu-item">Home</a>
@@ -21,6 +21,12 @@ const Navbar = () => {
 
                     </ul>
 
+                    <button class="menu-btn" onClick={() => {}}>
+                        <span 
+                            class={"material-symbols-outlined"}
+                            style ={{fontSize: "1.8rem"}}>
+                        </span>
+                    </button>
                 </div>
             </nav>
         </>
