@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import "./Navbar.css"
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import MobileNav from "./MobileNavbar/MobileNav"
 
 const Navbar = () => {
@@ -33,11 +35,11 @@ const Navbar = () => {
 
                     <button class="menu-btn" onClick={toggleMenu}>
                         <span 
-                            class={"material-symbols-outlined"}
+                            className={"material-symbols-outlined"}
                             style ={{fontSize: "1.8rem"}}
                         > 
                      {    /* colocar iconos más adelante */   }
-                            {openMenu ? "X": "_"}    
+                            {openMenu ? "X": <FontAwesomeIcon icon={faBars} />}    
                         </span>
                     </button>
                 </div>

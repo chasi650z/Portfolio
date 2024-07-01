@@ -147,3 +147,36 @@
         right: 0rem;
     }
 }
+
+@media (max-width: 600px) {
+    .me-content h2 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    .me-content p {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+
+    .me-img {
+        gap: 1rem;
+    }
+
+    .me-img > div {
+        gap:1rem;
+    }
+
+    .me-img > div > img {
+        width: 16rem;
+    }
+
+    .tech-icon {
+        width: 3.3rem;
+        height: 3.3rem;
+    }
+
+    .tech-icon img {
+        width: 2rem;
+    }
+}
