@@ -51,7 +51,7 @@
     flex: 1
 }
 
-@media (max-wdth: 1025px){
+@media (max-width: 1025px){
     .skills{
         padding-left: 1rem;
     }
@@ -63,8 +63,31 @@
 
 }
 
-@media (max-wdth: 768px){
+@media (max-width: 768px){
+    .skills-content {
+        flex-direction: column-reverse;
+        gap:3rem;
+    }
 
+    .skills,
+    .skills-info {
+        width: 100%;
+    }
+
+    .skills-container h5 {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .skills-container::after,
+    .skills-container::before {
+        width: 18rem;
+        height: 18rem;
+    }
 }
 
-
+@media (max-width: 600px){
+    .skills-container{
+        padding: 0;
+    }
+}
