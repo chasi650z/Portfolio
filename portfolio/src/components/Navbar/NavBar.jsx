@@ -3,6 +3,7 @@ import "./Navbar.css"
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import MobileNav from "./MobileNavbar/MobileNav"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -21,13 +22,10 @@ const Navbar = () => {
                     <img className="logo" src="./assets/logo.png"/>
                     <ul>
                         <li>
-                            <a className="menu-item">Home</a>
+                        <Link to="/" className="menu-item">Home</Link>
                         </li>
                         <li>
-                            <a className="menu-item">Skills</a>
-                        </li>
-                        <li>
-                            <a className="menu-item">Contact</a>
+                            <Link to="/skills" className="menu-item">Skills</Link>
                         </li>
 
 
